@@ -1,0 +1,5 @@
+node_modules/
+/tmp/
+audit-report_*.md
+.DS_Store
+*.log

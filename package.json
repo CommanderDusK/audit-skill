@@ -1,0 +1,13 @@
+{
+  "name": "audit-skill",
+  "version": "1.0.0",
+  "description": "Zero-Trust Security Auditor for AI Skills, GitHub Repositories, and Dependent Scripts",
+  "main": "SKILL.md",
+  "keywords": ["agent-skill", "antigravity", "security", "audit", "devsecops"],
+  "author": "CommanderDusK",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CommanderDusK/audit-skill.git"
+  }
+}
