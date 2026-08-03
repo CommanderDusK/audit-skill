@@ -43,7 +43,7 @@ Before running `audit-skill`, ensure the following prerequisite tools and skills
 
 | Dependency | Type | Source / Install Command | Role |
 | :--- | :--- | :--- | :--- |
-| **`smartbrain-skill-auditor`** | External Tool | `git clone [https://github.com/smartbrainactivity/smartbrain-skill-auditor.git](https://github.com/smartbrainactivity/smartbrain-skill-auditor.git) ~/tools/smartbrain-skill-auditor` | Static pre-install prompt & signature analysis |
+| **`smartbrain-skill-auditor`** | External Tool | `git clone https://github.com/smartbrainactivity/smartbrain-skill-auditor.git ~/tools/smartbrain-skill-auditor` | Static pre-install prompt & signature analysis |
 | **`security-auditor`** | Agent Skill | `npx skills add sickn33/agentic-awesome-skills --skill security-auditor` | Directory path & permission constraint SAST |
 | **`security-audit`** | Agent Skill | `npx skills add sickn33/agentic-awesome-skills --skill security-audit` | STRIDE threat modeling & dependency analysis |
 | **`skill-audit`** | NPM CLI Tool | `npx skill-audit` | AST code vulnerability scanner |
