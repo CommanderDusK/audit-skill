@@ -56,14 +56,15 @@ Before running `audit-skill`, ensure the following prerequisite tools and skills
 
 | Harness | Logo | Support Level | Target Global / Workspace Directory |
 | :---: | :---: | :---: | :--- |
-| **Antigravity 2.0** | <img src="https://github.com/google-gemini.png?size=40" width="22" height="22" alt="Antigravity 2.0"> | **Native / Primary** | Global: `~/.gemini/config/skills/`<br>Workspace: `.agents/skills/` |
-| **Antigravity CLI** | <img src="https://github.com/google.png?size=40" width="22" height="22" alt="Antigravity CLI"> | **Native / Primary** | Global: `~/.gemini/antigravity/skills/` & `~/.gemini/antigravity-cli/skills/`<br>Workspace: `.agents/skills/` |
-| **OpenAI Codex** | <img src="https://github.com/openai.png?size=40" width="22" height="22" alt="OpenAI Codex"> | **Supported** | Global: `~/.codex/skills/`<br>Workspace: `.codex/skills/` or `.agents/skills/` |
-| **GitHub Copilot** | <img src="https://github.com/github.png?size=40" width="22" height="22" alt="GitHub Copilot"> | **Supported** | Global: `~/.copilot/skills/`<br>Workspace: `.github/skills/` or `.agents/skills/` |
-| **Claude Code** | <img src="https://github.com/anthropics.png?size=40" width="22" height="22" alt="Claude Code"> | **Supported** | Global: `~/.claude/skills/`<br>Workspace: `.claude/skills/` |
-| **Cursor** | <img src="https://github.com/getcursor.png?size=40" width="22" height="22" alt="Cursor"> | **Supported** | Workspace: `.cursor/skills/` or `.cursor/rules/*.mdc` |
-| **Windsurf** | <img src="https://github.com/codeium.png?size=40" width="22" height="22" alt="Windsurf"> | **Supported** | Workspace: `.windsurf/rules/*.md` |
-| **Roo Code / Cline** | <img src="https://github.com/RooVetGit.png?size=40" width="22" height="22" alt="Roo Code"> | **Supported** | Workspace: `.clinerules` or `.agents/skills/` |
+| **Antigravity 2.0** | <img src="assets/agents/antigravity.jpg" width="50" height="50" alt="Antigravity 2.0"> | **Native / Primary** | Global: `~/.gemini/config/skills/`<br>Workspace: `.agents/skills/` |
+| **Antigravity CLI** | <img src="assets/agents/Antigravity_CLI.jpg" width="50" height="50" alt="Antigravity CLI"> | **Native / Primary** | Global: `~/.gemini/antigravity/skills/` & `~/.gemini/antigravity-cli/skills/`<br>Workspace: `.agents/skills/` |
+| **OpenAI Codex** | <img src="assets/agents/openai.png" width="50" height="50" alt="OpenAI Codex"> | **Supported** | Global: `~/.codex/skills/`<br>Workspace: `.codex/skills/` or `.agents/skills/` |
+| **GitHub Copilot** | <img src="assets/agents/copilot.jpg" width="50" height="50" alt="GitHub Copilot"> | **Supported** | Global: `~/.copilot/skills/`<br>Workspace: `.github/skills/` or `.agents/skills/` |
+| **Claude Code** | <img src="assets/agents/claude.jpg" width="50" height="50" alt="Claude Code"> | **Supported** | Global: `~/.claude/skills/`<br>Workspace: `.claude/skills/` |
+| **OpenCode** | <img src="assets/agents/opencode.jpg" width="50" height="50" alt="OpenCode"> | **Supported** | Workspace: `.clinerules` or `.agents/skills/` |
+| **Cursor** | <img src="assets/agents/cursor.jpg" width="50" height="50" alt="Cursor"> | **Supported** | Workspace: `.cursor/skills/` or `.cursor/rules/*.mdc` |
+| **Windsurf** | <img src="assets/agents/windsurf.jpg" width="50" height="50" alt="Windsurf"> | **Supported** | Workspace: `.windsurf/rules/*.md` |
+
 
 ---
 
