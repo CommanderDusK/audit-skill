@@ -13,27 +13,27 @@
 
 ## 📑 Table of Contents
 
-- [🛡️ Key Features](#️-key-features)
-- [🧩 Required Dependencies](#-required-dependencies)
-- [🌐 Supported Agent Harnesses](#-supported-agent-harnesses)
-- [🚀 Installation Guide](#-installation-guide)
+- [Key Features](#️-key-features)
+- [Required Dependencies](#-required-dependencies)
+- [Supported Agent Harnesses](#-supported-agent-harnesses)
+- [Installation Guide](#-installation-guide)
   - [Workspace Local Installation](#1-workspace-local-installation-per-project)
   - [Global Installation across Harnesses](#2-global-installation-across-harnesses)
   - [Harness-Specific Setup](#3-harness-specific-setup)
-- [🔄 Versioning Strategy](#-versioning-strategy)
-- [📂 Repository Structure](#-repository-structure)
-- [📄 License](#-license)
+- [Versioning Strategy](#-versioning-strategy)
+- [Repository Structure](#-repository-structure)
+- [License](#-license)
 
 ---
 
 ## 🛡️ Key Features
 
-- 👁️ **Ghost Prompt Detection:** Identifies hidden system overrides, zero-width Unicode characters, and indirect prompt injection vectors in `SKILL.md` files.
-- 💻 **Static AST Code Analysis:** Detects unsafe code evaluation (`eval`, `exec`, `vm.runInNewContext`) and unauthorized shell subprocess calls across Python, JavaScript, TypeScript, and Shell scripts.
-- 🌐 **Exfiltration Prevention:** Scans for unauthorized outbound telemetry, WebSockets, and hidden network fetch commands.
-- 🛡️ **Workspace SAST & Path Auditing:** Verifies that file system operations stay bounded within designated sandbox target directories.
-- 🔬 **STRIDE Threat Modeling:** Performs deep security audits on third-party package dependency chains before code execution.
-- 📊 **Automated Report Generation:** Populates an expertly formatted markdown audit report directly into your workspace.
+- **Ghost Prompt Detection:** Identifies hidden system overrides, zero-width Unicode characters, and indirect prompt injection vectors in `SKILL.md` files.
+- **Static AST Code Analysis:** Detects unsafe code evaluation (`eval`, `exec`, `vm.runInNewContext`) and unauthorized shell subprocess calls across Python, JavaScript, TypeScript, and Shell scripts.
+- **Exfiltration Prevention:** Scans for unauthorized outbound telemetry, WebSockets, and hidden network fetch commands.
+- **Workspace SAST & Path Auditing:** Verifies that file system operations stay bounded within designated sandbox target directories.
+- **STRIDE Threat Modeling:** Performs deep security audits on third-party package dependency chains before code execution.
+- **Automated Report Generation:** Populates an expertly formatted markdown audit report directly into your workspace.
 
 ---
 
@@ -56,15 +56,14 @@ Before running `audit-skill`, ensure the following prerequisite tools and skills
 
 | Harness | Logo | Support Level | Target Global / Workspace Directory |
 | :---: | :---: | :---: | :--- |
-| **Antigravity 2.0** | <img src="assets/agents/antigravity.jpg" width="50" height="50" alt="Antigravity 2.0"> | **Native / Primary** | Global: `~/.gemini/config/skills/`<br>Workspace: `.agents/skills/` |
-| **Antigravity CLI** | <img src="assets/agents/Antigravity_CLI.jpg" width="50" height="50" alt="Antigravity CLI"> | **Native / Primary** | Global: `~/.gemini/antigravity/skills/` & `~/.gemini/antigravity-cli/skills/`<br>Workspace: `.agents/skills/` |
-| **OpenAI Codex** | <img src="assets/agents/openai.png" width="50" height="50" alt="OpenAI Codex"> | **Supported** | Global: `~/.codex/skills/`<br>Workspace: `.codex/skills/` or `.agents/skills/` |
-| **GitHub Copilot** | <img src="assets/agents/copilot.jpg" width="50" height="50" alt="GitHub Copilot"> | **Supported** | Global: `~/.copilot/skills/`<br>Workspace: `.github/skills/` or `.agents/skills/` |
-| **Claude Code** | <img src="assets/agents/claude.jpg" width="50" height="50" alt="Claude Code"> | **Supported** | Global: `~/.claude/skills/`<br>Workspace: `.claude/skills/` |
-| **OpenCode** | <img src="assets/agents/opencode.jpg" width="50" height="50" alt="OpenCode"> | **Supported** | Workspace: `.clinerules` or `.agents/skills/` |
-| **Cursor** | <img src="assets/agents/cursor.jpg" width="50" height="50" alt="Cursor"> | **Supported** | Workspace: `.cursor/skills/` or `.cursor/rules/*.mdc` |
-| **Windsurf** | <img src="assets/agents/windsurf.jpg" width="50" height="50" alt="Windsurf"> | **Supported** | Workspace: `.windsurf/rules/*.md` |
-
+| **Antigravity 2.0** | <img src="assets/agents/antigravity.png" width="50" height="50" alt="Antigravity 2.0"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Native-0059FF" alt="✓ Native" /> | Global: `~/.gemini/config/skills/`<br>Workspace: `.agents/skills/` |
+| **Antigravity CLI** | <img src="assets/agents/Antigravity_CLI.jpg" width="50" height="50" alt="Antigravity CLI"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Native-0059FF" alt="✓ Native" /> | Global: `~/.gemini/antigravity/skills/` & `~/.gemini/antigravity-cli/skills/`<br>Workspace: `.agents/skills/` |
+| **OpenAI Codex** | <img src="assets/agents/codex.jpg" width="50" height="50" alt="OpenAI Codex"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Supported-2ea44f" alt="✓ Supported" /> | Global: `~/.codex/skills/`<br>Workspace: `.codex/skills/` or `.agents/skills/` |
+| **GitHub Copilot** | <img src="assets/agents/copilot.jpg" width="50" height="50" alt="GitHub Copilot"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Supported-2ea44f" alt="✓ Supported" /> | Global: `~/.copilot/skills/`<br>Workspace: `.github/skills/` or `.agents/skills/` |
+| **Claude Code** | <img src="assets/agents/claude.jpg" width="50" height="50" alt="Claude Code"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Supported-2ea44f" alt="✓ Supported" /> | Global: `~/.claude/skills/`<br>Workspace: `.claude/skills/` |
+| **OpenCode** | <img src="assets/agents/opencode.png" width="50" height="50" alt="OpenCode"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Supported-2ea44f" alt="✓ Supported" /> | Workspace: `.clinerules` or `.agents/skills/` |
+| **Cursor** | <img src="assets/agents/cursor.jpg" width="50" height="50" alt="Cursor"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Supported-2ea44f" alt="✓ Supported" /> | Workspace: `.cursor/skills/` or `.cursor/rules/*.mdc` |
+| **Windsurf** | <img src="assets/agents/windsurf.png" width="50" height="50" alt="Windsurf"> | <img src="https://img.shields.io/badge/-%E2%9C%93%20Supported-2ea44f" alt="✓ Supported" /> | Workspace: `.windsurf/rules/*.md` |
 
 ---
 
